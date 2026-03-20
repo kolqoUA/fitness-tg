@@ -1,0 +1,57 @@
+.user-nutrition-info {
+  padding-block: 15px;
+  padding-inline: 20px;
+
+  background-color: var(--theme-surface-color);
+
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  .calories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .value {
+      font-size: 18px;
+      color: var(--theme-text-color);
+    }
+
+    .unit {
+      font-size: 12px;
+      color: var(--theme-subtext-color);
+    }
+  }
+
+  .user-progress-bars {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+  }
+}
+
+.label-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    .name {
+      font-size: 12px;
+      color: var(--theme-subtext-color);
+    }
+
+    .value {
+      font-size: 14px;
+      color: var(--theme-text-color);
+    }
+  }
+}

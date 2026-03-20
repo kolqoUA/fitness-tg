@@ -1,0 +1,25 @@
+.user-water-tracker {
+  padding-block: 15px;
+  padding-inline: 20px;
+ 
+  border-radius: 20px;
+
+  background-color: var(--theme-surface-color);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    .button-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+    }
+  }
+}

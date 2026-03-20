@@ -1,0 +1,1 @@
+export {default as WaterIcon} from "./water-icon";

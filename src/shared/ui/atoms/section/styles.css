@@ -1,0 +1,31 @@
+.section {
+  width: 100%;
+
+  padding-inline: 10px;
+  padding-block: 15px;
+
+  background-color: var(--theme-surface-color);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .section-header {
+    margin-left: 5px;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--theme-text-color);
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-children {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}

@@ -1,0 +1,152 @@
+:root {
+  --font-family: "Inter", sans-serif;
+}
+
+/* Тема за замовчуванням (Default Dark) */
+#root[data-theme="default"] {
+  --theme-main-bg-color: #0b1d2a;
+  --theme-secondary-bg-color: #102a3d;
+  --theme-surface-color: #132f42;
+  --theme-surface-distinctive-color: #0b1c27;
+  --theme-primary-color: #3a86ff;
+  --theme-secondary-color: #00b4d8;
+  --theme-border-color: #1e3a4c;
+  --theme-text-color: #e6f1ff;
+  --theme-subtext-color: #9fb3c8;
+}
+
+/* Світла тема */
+#root[data-theme="light"] {
+  --theme-main-bg-color: #f8fafc;
+  --theme-secondary-bg-color: #e2e8f0;
+  --theme-surface-color: #ffffff;
+  --theme-surface-distinctive-color: #f1f5f9;
+  --theme-primary-color: #2563eb;
+  --theme-secondary-color: #3b82f6;
+  --theme-border-color: #cbd5e1;
+  --theme-text-color: #0f172a;
+  --theme-subtext-color: #64748b;
+}
+
+/* Тема Cyberpunk */
+#root[data-theme="cyberpunk"] {
+  --theme-main-bg-color: #2b0031;
+  --theme-secondary-bg-color: #1a001e;
+  --theme-surface-color: #3d0044;
+  --theme-surface-distinctive-color: #140017;
+  --theme-primary-color: #ff0055;
+  --theme-secondary-color: #00ff9f;
+  --theme-border-color: #5c0066;
+  --theme-text-color: #e0fbfc;
+  --theme-subtext-color: #ff73a8;
+}
+
+/* Тема Forest */
+#root[data-theme="forest"] {
+  --theme-main-bg-color: #1a2e1a;
+  --theme-secondary-bg-color: #122112;
+  --theme-surface-color: #243d24;
+  --theme-surface-distinctive-color: #0d1a0d;
+  --theme-primary-color: #728c69;
+  --theme-secondary-color: #a3b899;
+  --theme-border-color: #325232;
+  --theme-text-color: #d2e8d2;
+  --theme-subtext-color: #9ab39a;
+}
+
+/* Тема Dracula (Стильна фіолетово-темна) */
+#root[data-theme="dracula"] {
+  --theme-main-bg-color: #282a36;
+  --theme-secondary-bg-color: #1e1f29;
+  --theme-surface-color: #44475a;
+  --theme-surface-distinctive-color: #191a21;
+  --theme-primary-color: #bd93f9;
+  --theme-secondary-color: #ff79c6;
+  --theme-border-color: #6272a4;
+  --theme-text-color: #f8f8f2;
+  --theme-subtext-color: #8be9fd;
+}
+
+/* Тема Nord (Холодна арктична) */
+#root[data-theme="nord"] {
+  --theme-main-bg-color: #2e3440;
+  --theme-secondary-bg-color: #242933;
+  --theme-surface-color: #3b4252;
+  --theme-surface-distinctive-color: #292e39;
+  --theme-primary-color: #88c0d0;
+  --theme-secondary-color: #81a1c1;
+  --theme-border-color: #4c566a;
+  --theme-text-color: #eceff4;
+  --theme-subtext-color: #d8dee9;
+}
+
+/* Тема Sunset (Тепла темна) */
+#root[data-theme="sunset"] {
+  --theme-main-bg-color: #2d1b2e;
+  --theme-secondary-bg-color: #1f1220;
+  --theme-surface-color: #3e263f;
+  --theme-surface-distinctive-color: #1a0f1b;
+  --theme-primary-color: #ff8c42;
+  --theme-secondary-color: #ffa666;
+  --theme-border-color: #5c385d;
+  --theme-text-color: #ffeef2;
+  --theme-subtext-color: #d4a3b8;
+}
+
+/* Тема Matcha (Тепла м'яка світла) */
+#root[data-theme="matcha"] {
+  --theme-main-bg-color: #f4eee0;
+  --theme-secondary-bg-color: #e8dfcf;
+  --theme-surface-color: #fffdf7;
+  --theme-surface-distinctive-color: #e0d5c1;
+  --theme-primary-color: #7b6d59;
+  --theme-secondary-color: #8a9a5b;
+  --theme-border-color: #d3c4ad;
+  --theme-text-color: #4a4031;
+  --theme-subtext-color: #8c8170;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  margin: 0;
+  background-color: var(--theme-secondary-bg-color);
+  font-family: var(--font-family);
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .screen {
+  height: 100%;
+  width: 100%;
+  max-width: 700px;
+  background-color: var(--theme-main-bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  margin: 0;
+}

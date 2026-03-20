@@ -1,0 +1,19 @@
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: var(--theme-surface-distinctive-color);
+  border-radius: 5px;
+  overflow: hidden;
+
+  .progress-fill {
+    width: 50%;
+    height: 100%;
+    background-color: var(--theme-primary-color);
+    background: linear-gradient(
+      90deg,
+      var(--theme-primary-color),
+      var(--theme-secondary-color)
+    );
+    transition: width 0.3s ease-out;
+  }
+}

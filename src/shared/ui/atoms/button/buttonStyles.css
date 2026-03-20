@@ -1,0 +1,26 @@
+.button-primary {
+  background-color: var(--theme-primary-color);
+}
+
+.button-surface {
+  background-color: var(--theme-surface-color);
+}
+
+.button-surface-border {
+  background-color: var(--theme-surface-color);
+  border: 1px solid var(--theme-border-color);
+}
+
+.button-border {
+  background-color: transparent;
+  border: 1px solid var(--theme-border-color);
+}
+
+.button-distinctive {
+  background-color: var(--theme-surface-distinctive-color);
+}
+
+.button-distinctive-border {
+  background-color: var(--theme-surface-distinctive-color);
+  border: 1px solid var(--theme-border-color);
+}

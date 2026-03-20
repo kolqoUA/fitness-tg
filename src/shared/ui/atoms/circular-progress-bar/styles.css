@@ -1,0 +1,38 @@
+.circular-progress-bar {
+  --deg: calc((var(--progress) * 360deg) / 100);
+
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  overflow: hidden;
+  background: conic-gradient(
+    var(--primary-color) 0deg,
+    var(--primary-color) var(--deg),
+    var(--theme-surface-distinctive-color) var(--deg),
+    var(--theme-surface-distinctive-color)
+  );
+  transition:
+    --progress 0.3s ease-out,
+    background-color 0.3s ease-out;
+
+  .center-box {
+    width: calc(var(--size) - var(--tickness));
+    height: calc(var(--size) - var(--tickness));
+
+    border-radius: 50%;
+    background-color: var(--circle-color);
+
+    color: var(--theme-text-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    content: "100%";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

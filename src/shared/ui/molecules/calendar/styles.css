@@ -1,0 +1,54 @@
+.calendar-card {
+  font-family: var(--font-family);
+
+  background-color: var(--theme-surface-color);
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Назви днів (SUN, MON...) */
+.rdp-head_cell {
+  font-weight: 400;
+  color: var(--theme-text-color);
+}
+
+/* Комірка дня */
+/* .rdp-day {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+} */
+
+/* Вибраний день (синій квадрат) */
+/* .rdp-day_selected {
+  background-color: var(--theme-primary-color) !important;
+  color: white !important;
+  border-radius: 4px; 
+} */
+
+/* Вихідні дні (червоний колір) */
+/* .rdp-day_weekend:not(.rdp-day_outside) {
+  color: #d00000;
+} */
+
+/* Дні поза місяцем (сірі цифри) */
+/* .rdp-day_outside {
+  color: var(--theme-subtext-color);
+  opacity: 0.5;
+} */
+
+/* Стилізація кнопок навігації (« < > ») */
+/* .rdp-nav_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+} */
