@@ -1,0 +1,20 @@
+import './styles.css'
+
+interface Props {
+	value: string
+	name: string
+	color: string
+}
+
+const NutritionTile = (props: Props) => {
+	return (
+		<div className='nutrition-tile'>
+			<p className='value' style={{ color: props.color }}>
+				{props.value}
+			</p>
+			<p className='name'>{props.name}</p>
+		</div>
+	)
+}
+
+export default NutritionTile

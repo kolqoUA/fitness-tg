@@ -15,8 +15,10 @@ interface Props {
 }
 
 const LabelProgressBar = (props: Props) => {
+  const isCompleted = props.value >= props.max;
+
   return (
-    <div className="label-bar">
+    <div className={`label-bar ${isCompleted ? "shimmer-glow" : ""}`}>
       <div className="info">
         <p className="name">{props.name}</p>
         <p className="value">{props.value}/{props.max} {props.unit}</p>
@@ -27,6 +29,15 @@ const LabelProgressBar = (props: Props) => {
         min={props.min}
         max={props.max}
       />
+      {isCompleted && (
+        <div className="particles">
+          <span className="particle"></span>
+          <span className="particle"></span>
+          <span className="particle"></span>
+          <span className="particle"></span>
+          <span className="particle"></span>
+        </div>
+      )}
     </div>
   );
 };

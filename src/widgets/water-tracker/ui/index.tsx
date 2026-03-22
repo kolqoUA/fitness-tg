@@ -11,7 +11,7 @@ interface Props {
 
 const WaterTracker = (props: Props) => {
   return (
-    <div className="user-water-tracker">
+    <div className="water-tracker">
       <LabelProgressBar
         name="Вода"
         color={{ primary: "#288ea7", secondary: "#2c9db9" }}

@@ -1,0 +1,38 @@
+.meal-tracker {
+	display: flex;
+	flex-direction: column;
+  gap: 10px;
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+
+		p {
+			font-size: 18px;
+			color: var(--theme-text-color);
+		}
+
+		.icon-box {
+			padding: 1px;
+			border: 1px solid var(--theme-text-color);
+			border-radius: 5px;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	.empty-state {
+		padding: 50px;
+		color: var(--theme-subtext-color);
+		text-align: center;
+	}
+
+	.meals-list {
+
+    display: flex;
+    flex-direction: column;
+    
+	}
+}

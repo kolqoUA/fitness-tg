@@ -1,0 +1,85 @@
+.meal-container {
+	padding-block: 15px;
+	padding-inline: 20px;
+
+	background-color: var(--theme-surface-color);
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	.meal-info {
+		display: flex;
+		gap: 20px;
+
+		img {
+			width: 50px;
+			height: 50px;
+
+			border: 1px solid var(--theme-border-color);
+
+			border-radius: 50%;
+
+      cursor: pointer;
+
+      transition: transform 0.3s ease-in-out;
+		}
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+		.meal-text {
+			display: flex;
+			flex-direction: column;
+			.name {
+				font-size: 18px;
+				color: var(--theme-text-color);
+			}
+
+			.description {
+				font-size: 14px;
+				color: var(--theme-subtext-color);
+			}
+		}
+	}
+
+	.meal-nutrition {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+
+		color: var(--theme-text-color);
+
+		.calories {
+      color: var(--theme-calories-color);
+		}
+
+		.proteins {
+      color: var(--theme-proteins-color);
+
+		}
+
+		.fats {
+      color: var(--theme-fats-color);
+
+		}
+
+		.carbohydrates {
+      color: var(--theme-carbs-color);
+
+		}
+	}
+}
+
+.meal-container:not(:last-child) {
+	border-bottom: 1px solid var(--theme-border-color);
+}
+
+.meal-container:first-child {
+	border-radius: 20px 20px 0 0;
+}
+
+.meal-container:last-child {
+	border-radius: 0 0 20px 20px;
+}
