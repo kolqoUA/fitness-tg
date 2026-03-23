@@ -1,0 +1,66 @@
+.option-selector {
+  height: 40px;
+	padding: 5px;
+
+	font-size: 14px;
+	color: var(--theme-subtext-color);
+
+	border-radius: 20px;
+	background-color: var(--theme-surface-color);
+
+	display: flex;
+	gap: 10px;
+
+	position: relative;
+	z-index: 1;
+
+	--options-count: 2;
+	--active-index: 0;
+
+	&:has(.option:nth-last-child(2):nth-child(1)) { --options-count: 2; }
+	&:has(.option:nth-last-child(3):nth-child(1)) { --options-count: 3; }
+	&:has(.option:nth-last-child(4):nth-child(1)) { --options-count: 4; }
+	&:has(.option:nth-last-child(5):nth-child(1)) { --options-count: 5; }
+
+	&:has(.option:nth-child(1).chosen) { --active-index: 0; }
+	&:has(.option:nth-child(2).chosen) { --active-index: 1; }
+	&:has(.option:nth-child(3).chosen) { --active-index: 2; }
+	&:has(.option:nth-child(4).chosen) { --active-index: 3; }
+	&:has(.option:nth-child(5).chosen) { --active-index: 4; }
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 5px;
+		bottom: 5px;
+		left: 5px;
+		z-index: 0;
+		background-color: var(--theme-surface-distinctive-color);
+		border-radius: 15px;
+
+		width: calc((100% - 10px - ((var(--options-count) - 1) * 10px)) / var(--options-count));
+		transform: translateX(calc(var(--active-index) * (100% + 10px)));
+		transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), width 0.3s ease-in-out;
+	}
+
+	.option {
+    height: 100%;
+
+    border-radius: 15px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 1;
+
+		position: relative;
+		z-index: 1;
+    cursor: pointer;
+
+    transition: color 0.3s ease-in-out;
+	}
+
+	.option.chosen {
+		color: var(--theme-text-color);
+	}
+}

@@ -1,0 +1,1 @@
+export { default as MealManualForm} from './ui';

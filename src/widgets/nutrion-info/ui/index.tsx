@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { CircularProgressBar, LabelProgressBar } from "../../../shared/ui";
+import { CircularProgressBar, LabelProgressBar } from '@/shared/ui'
 
 const NutritionInfo = () => {
   const calories = 836;

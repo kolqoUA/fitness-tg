@@ -1,0 +1,11 @@
+.input-field {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  .input-label {
+    font-size: 12px;
+    color: var(--theme-text-color);
+  }
+}

@@ -1,7 +1,7 @@
 import "./styles.css";
 
-import { waterPresents } from "../../../features/add-water";
-import { Button, LabelProgressBar } from "../../../shared/ui";
+import { waterPresents } from '@/features/add-water'
+import { Button, LabelProgressBar } from '@/shared/ui'
 import { WaterIcon } from "../assets";
 
 interface Props {

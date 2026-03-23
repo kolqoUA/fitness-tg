@@ -1,9 +1,9 @@
 import "./styles.css";
 
-import { Theme } from "../../shared/assets";
-import { Dropdown, Section } from "../../shared/ui";
-import { themes } from "../../shared/const";
-import { useTheme } from "../../shared/lib";
+import { Theme } from "@/shared/assets";
+import { Dropdown, Section } from '@/shared/ui'
+import { themes } from '@/shared/const'
+import { useTheme } from '@/shared/lib'
 
 const Settings = () => {
   const { theme, setTheme } = useTheme();

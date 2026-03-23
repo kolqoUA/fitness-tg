@@ -2,9 +2,11 @@ import "./styles.css";
 
 import { useState } from 'react'
 
-import { Button } from "../../shared/ui";
-import { MealTracker, NutritionInfo, WaterTracker } from "../../widgets";
-import { getMeals } from "../../entities/meal";
+import { Button } from '@/shared/ui'
+import { MealTracker } from '@/widgets/meal-tracker'
+import { NutritionInfo } from '@/widgets/nutrion-info'
+import { WaterTracker } from '@/widgets/water-tracker'
+import { getMeals } from '@/entities/meal'
 
 const Home = () => {
   const [waterIntake, setWaterIntake] = useState(0);

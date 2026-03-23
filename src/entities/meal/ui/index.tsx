@@ -1,7 +1,7 @@
 import './styles.css'
 
 import type { MealType } from '../';
-import { ImageModal, NutritionTile } from '../../../shared/ui';
+import { ImageModal, NutritionTile } from '@/shared/ui'
 import { useState } from 'react';
 
 interface Props {
