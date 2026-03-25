@@ -11,6 +11,7 @@ export { default as ChooseOption } from './molecules/choose-option'
 export type { ChooseOptionType } from './molecules/choose-option'
 
 export { default as Dropdown } from './molecules/dropdown'
+export { BarcodeScanner } from './molecules/barcode-scanner'
 export { default as Calendar } from './molecules/calendar'
 export { default as ImageModal } from './molecules/image-modal'
 export { default as ImageUploader } from './molecules/image-uploader'

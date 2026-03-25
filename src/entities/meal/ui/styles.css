@@ -1,4 +1,4 @@
-.meal-container {
+.meal {
 	padding-block: 15px;
 	padding-inline: 20px;
 
@@ -8,7 +8,7 @@
 	flex-direction: column;
 	gap: 10px;
 
-	.meal-info {
+	.meal__info {
 		display: flex;
 		gap: 20px;
 
@@ -29,57 +29,38 @@
       transform: scale(1.1);
     }
 
-		.meal-text {
+		.meal__text {
 			display: flex;
 			flex-direction: column;
-			.name {
+			.meal__name {
 				font-size: 18px;
 				color: var(--theme-text-color);
 			}
 
-			.description {
+			.meal__description {
 				font-size: 14px;
 				color: var(--theme-subtext-color);
 			}
 		}
 	}
 
-	.meal-nutrition {
+	.meal__nutritions {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 10px;
 
 		color: var(--theme-text-color);
-
-		.calories {
-      color: var(--theme-calories-color);
-		}
-
-		.proteins {
-      color: var(--theme-proteins-color);
-
-		}
-
-		.fats {
-      color: var(--theme-fats-color);
-
-		}
-
-		.carbohydrates {
-      color: var(--theme-carbs-color);
-
-		}
 	}
 }
 
-.meal-container:not(:last-child) {
+.meal:not(:last-child) {
 	border-bottom: 1px solid var(--theme-border-color);
 }
 
-.meal-container:first-child {
+.meal:first-child {
 	border-radius: 20px 20px 0 0;
 }
 
-.meal-container:last-child {
+.meal:last-child {
 	border-radius: 0 0 20px 20px;
 }

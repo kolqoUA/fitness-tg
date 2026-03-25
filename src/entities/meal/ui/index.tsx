@@ -13,19 +13,19 @@ const Meal = (props: Props) => {
 
   return (
 		<>
-			<div className='meal-container'>
-				<div className='meal-info'>
+			<div className='meal'>
+				<div className='meal__info'>
 					<img
 						src={props.data.image}
 						alt={props.data.name}
 						onClick={() => setIsZoomed(!isZoomed)}
 					/>
-					<div className='meal-text'>
-						<p className='name'>{props.data.name}</p>
-						<p className='description'>{props.data.description}</p>
+					<div className='meal__text'>
+						<p className='meal__name'>{props.data.name}</p>
+						<p className='meal__description'>{props.data.description}</p>
 					</div>
 				</div>
-				<div className='meal-nutrition'>
+				<div className='meal__nutritions'>
 					<NutritionTile
 						value={`${props.data.calories}`}
 						name='калорій'

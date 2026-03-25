@@ -1,0 +1,31 @@
+.meal-info {
+  padding-block: 15px;
+  padding-inline: 20px;
+
+  border-radius: 20px;
+
+  background-color: var(--theme-surface-color);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .meal-info__header {
+    .meal-info__name {
+      font-size: 14px;
+      color: var(--theme-text-color);
+    }
+
+    .meal-info__description {
+      font-size: 12px;
+      color: var(--theme-subtext-color);
+    }
+  }
+
+  .meal-info__nutritions {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+}
