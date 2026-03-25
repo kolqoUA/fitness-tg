@@ -1,5 +1,17 @@
 .meal-manual-form {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 20px;
+
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+  }
+
+  .input-tile-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 }

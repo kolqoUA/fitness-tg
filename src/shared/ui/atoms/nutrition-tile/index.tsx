@@ -1,7 +1,7 @@
 import './styles.css'
 
 interface Props {
-	value: string
+	value: string | number
 	name: string
 	color: string
 }

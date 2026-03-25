@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom'
 
 import { useTelegramBackButton } from '@/shared/lib'
 
-const GlobalLayout = () => {
+export const GlobalLayout = () => {
   useTelegramBackButton()
 	return (
 		<>
@@ -10,5 +10,3 @@ const GlobalLayout = () => {
 		</>
 	)
 }
-
-export default GlobalLayout

@@ -1,2 +1,2 @@
-export { default as GlobalLayout } from './global-layout'
-export { default as MainLayout } from './main-layout'
+export { GlobalLayout } from './global-layout'
+export { MainLayout } from './main-layout'

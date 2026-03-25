@@ -1,4 +1,4 @@
-export default interface Meal {
+export interface MealType {
 	id: number
 	name: string
 	description: string
@@ -8,3 +8,5 @@ export default interface Meal {
 	carbohydrates: number
 	image: string
 }
+
+export type CreateMealDto = Omit<MealType, "id">;
