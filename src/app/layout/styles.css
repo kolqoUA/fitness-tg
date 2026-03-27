@@ -1,0 +1,16 @@
+.main-layout{
+  padding-bottom: 80px;
+  height: 100%;
+	width: 100%;
+	max-width: 700px;
+	background-color: var(--theme-main-bg-color);
+	overflow-y: auto;
+}
+
+.empty_layout {
+	height: 100%;
+	width: 100%;
+	max-width: 700px;
+	background-color: var(--theme-main-bg-color);
+	overflow-y: auto;
+}

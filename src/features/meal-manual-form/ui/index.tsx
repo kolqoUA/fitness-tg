@@ -1,7 +1,7 @@
 import "./styles.css";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import type { CreateMealDto } from "@/entities/meal";
-import { ImageUploader, InputField, InputTile } from "@/shared/ui";
+import { Button, ImageUploader, InputField, InputTile } from "@/shared/ui";
 
 const MealManualForm = () => {
 
@@ -52,7 +52,7 @@ const MealManualForm = () => {
           type="number"
         />
       </div>
-      <button type="submit">Готово</button>
+      <Button className="button-primary">Добавити</Button>
     </form>
   );
 };

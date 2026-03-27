@@ -1,0 +1,1 @@
+export { NutrientsAverageBoard } from "./ui";

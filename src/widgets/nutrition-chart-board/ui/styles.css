@@ -1,0 +1,16 @@
+.nutrition-chart-board {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .nutrition-chart-board__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > p {
+      font-size: 18px;
+      color: var(--theme-text-color);
+    }
+  }
+}

@@ -8,6 +8,7 @@
   border-top: 1px solid var(--theme-border-color);
 
   color: var(--theme-text-color);
+  font-weight: 300;
   background-color: var(--theme-surface-color);
 
   bottom: 0;

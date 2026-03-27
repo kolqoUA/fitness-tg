@@ -1,4 +1,9 @@
-import { HomeIcon, StatisticsIcon, ProfileIcon, SettingsIcon } from "../assets";
+import {
+  HouseIcon,
+  ChartLineIcon,
+  UserIcon,
+  GearIcon,
+} from "@phosphor-icons/react";
 import { type ReactNode } from "react";
 
 type NavbarItem = {
@@ -7,26 +12,26 @@ type NavbarItem = {
   icon: ReactNode;
 };
 
-const navbarItems: (currentPath: string) => NavbarItem[] = (currentPath: string) => [
+const navbarItems: (currentPath: string) => NavbarItem[] = () => [
   {
     path: "/",
     name: "Home",
-    icon: <HomeIcon isChosen={currentPath === "/"} />,
+    icon: <HouseIcon size={24} weight="fill" />,
   },
   {
     path: "/statistics",
     name: "Statistics",
-    icon: <StatisticsIcon isChosen={currentPath === "/statistics"} />,
+    icon: <ChartLineIcon size={24} weight="fill" />,
   },
   {
     path: "/profile",
     name: "Profile",
-    icon: <ProfileIcon isChosen={currentPath === "/profile"} />,
+    icon: <UserIcon size={24} weight="fill" />,
   },
   {
     path: "/settings",
     name: "Settings",
-    icon: <SettingsIcon isChosen={currentPath === "/settings"} />,
+    icon: <GearIcon size={24} weight="fill" />,
   },
 ];
 

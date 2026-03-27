@@ -1,8 +1,8 @@
 import "./styles.css";
 
 import { useEffect, useRef, useState } from "react";
-import { Arrow } from "../../../assets";
 import type { DropdownOption } from "../../../types";
+import { ChevronDown } from "lucide-react";
 
 export interface DropdownProps {
   dropdownOptions: DropdownOption[];
@@ -41,7 +41,7 @@ const Dropdown = (props: DropdownProps) => {
     >
       <p className="selected-option">{value.label}</p>
       <div className="arrow-icon">
-        <Arrow />
+        <ChevronDown color="#777777" strokeWidth={1}/>
       </div>
       <div className={`options ${isOpen ? "options-open" : ""}`}>
         {props.dropdownOptions.map((option) => (

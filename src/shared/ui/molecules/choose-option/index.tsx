@@ -1,8 +1,11 @@
 import './styles.css'
 
+import type { ReactNode } from 'react';
+
 export interface ChooseOptionType {
 	value: string
 	label: string
+	icon?: ReactNode;
 }
 
 interface Props {
@@ -20,6 +23,7 @@ const ChooseOption = (props: Props) => {
 					className={`option ${props.currentOption === option.value ? 'chosen' : ''}`}
 					onClick={() => props.onClick(option.value)}
 				>
+					{option.icon}
 					<p>{option.label}</p>
 				</div>
 			))}

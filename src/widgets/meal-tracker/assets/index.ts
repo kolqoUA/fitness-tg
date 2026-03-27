@@ -1,1 +1,0 @@
-export { default as WriteIcon } from './write-icon'

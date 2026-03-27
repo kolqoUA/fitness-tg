@@ -1,0 +1,37 @@
+import type { DailyStatDto } from '../model/types';
+
+export const getDailyStats: () => DailyStatDto[] = () => {
+  return [
+    { date: "2026-02-25", calories: 2100, proteins: 120, fats: 70, carbs: 250, water: 2000 },
+    { date: "2026-02-26", calories: 1950, proteins: 115, fats: 65, carbs: 220, water: 2500 },
+    { date: "2026-02-27", calories: 2300, proteins: 140, fats: 80, carbs: 260, water: 1800 },
+    { date: "2026-02-28", calories: 2500, proteins: 150, fats: 90, carbs: 270, water: 2200 },
+    { date: "2026-03-01", calories: 2600, proteins: 145, fats: 95, carbs: 280, water: 2000 },
+    { date: "2026-03-02", calories: 1800, proteins: 110, fats: 60, carbs: 200, water: 2700 },
+    { date: "2026-03-03", calories: 1900, proteins: 115, fats: 65, carbs: 210, water: 2600 },
+    { date: "2026-03-04", calories: 2000, proteins: 125, fats: 70, carbs: 220, water: 2400 },
+    { date: "2026-03-05", calories: 2100, proteins: 130, fats: 75, carbs: 230, water: 2300 },
+    { date: "2026-03-06", calories: 2200, proteins: 135, fats: 80, carbs: 240, water: 2100 },
+    { date: "2026-03-07", calories: 2400, proteins: 140, fats: 85, carbs: 250, water: 1900 },
+    { date: "2026-03-08", calories: 2700, proteins: 155, fats: 100, carbs: 290, water: 1800 },
+    { date: "2026-03-09", calories: 1850, proteins: 115, fats: 60, carbs: 200, water: 2800 },
+    { date: "2026-03-10", calories: 1950, proteins: 120, fats: 65, carbs: 210, water: 2700 },
+    { date: "2026-03-11", calories: 2050, proteins: 125, fats: 70, carbs: 220, water: 2500 },
+    { date: "2026-03-12", calories: 2150, proteins: 130, fats: 75, carbs: 230, water: 2400 },
+    { date: "2026-03-13", calories: 2250, proteins: 135, fats: 80, carbs: 240, water: 2200 },
+    { date: "2026-03-14", calories: 2500, proteins: 145, fats: 90, carbs: 260, water: 2000 },
+    { date: "2026-03-15", calories: 2650, proteins: 150, fats: 95, carbs: 280, water: 1900 },
+    { date: "2026-03-16", calories: 1800, proteins: 110, fats: 55, carbs: 190, water: 3000 },
+    { date: "2026-03-17", calories: 1900, proteins: 115, fats: 60, carbs: 200, water: 2800 },
+    { date: "2026-03-18", calories: 2000, proteins: 120, fats: 65, carbs: 210, water: 2600 },
+    { date: "2026-03-19", calories: 2100, proteins: 125, fats: 70, carbs: 220, water: 2500 },
+    { date: "2026-03-20", calories: 2200, proteins: 130, fats: 75, carbs: 230, water: 2300 },
+    { date: "2026-03-21", calories: 2650, proteins: 140, fats: 95, carbs: 280, water: 2000 },
+    { date: "2026-03-22", calories: 2400, proteins: 135, fats: 85, carbs: 260, water: 1800 },
+    { date: "2026-03-23", calories: 1850, proteins: 110, fats: 60, carbs: 190, water: 3200 },
+    { date: "2026-03-24", calories: 1950, proteins: 125, fats: 65, carbs: 200, water: 2800 },
+    { date: "2026-03-25", calories: 1800, proteins: 115, fats: 55, carbs: 180, water: 3000 },
+    { date: "2026-03-26", calories: 2100, proteins: 130, fats: 70, carbs: 220, water: 2500 },
+    { date: "2026-03-27", calories: 2250, proteins: 145, fats: 80, carbs: 235, water: 2200 },
+  ];
+};

@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { waterPresents } from '@/features/add-water'
 import { Button, LabelProgressBar } from '@/shared/ui'
-import { WaterIcon } from "../assets";
+import { DropIcon } from "@phosphor-icons/react";
 
 interface Props {
   setWaterIntake: (value: number) => void;
@@ -14,7 +14,7 @@ const WaterTracker = (props: Props) => {
     <div className="water-tracker">
       <LabelProgressBar
         name="Вода"
-        color={{ primary: "#288ea7", secondary: "#2c9db9" }}
+        color={{ primary: "var(--theme-water-color)", secondary: "var(--theme-water-light-color)" }}
         min={0}
         max={3000}
         value={props.waterIntake}
@@ -29,7 +29,7 @@ const WaterTracker = (props: Props) => {
             }
           >
             <div className="button-content">
-              <WaterIcon /> {present.label}
+              <DropIcon size={18} weight="fill"/> {present.label}
             </div>
           </Button>
         ))}

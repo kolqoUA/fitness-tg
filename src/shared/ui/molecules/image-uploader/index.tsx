@@ -1,7 +1,7 @@
 import "./styles.css";
 
 import { forwardRef, useState, type InputHTMLAttributes } from "react";
-import { FileUploader } from "@/shared/assets";
+import { Upload } from "lucide-react";
 
 interface Props extends InputHTMLAttributes<HTMLInputElement> {}
 
@@ -25,7 +25,7 @@ const ImageUploader = forwardRef<HTMLInputElement, Props>((props, ref) => {
             <img src={previewUrl} alt="Preview" />
           ) : (
             <>
-              <FileUploader />
+              <Upload size={80} strokeWidth={1}/>
               <p>Завантажити зображення</p>
             </>
           )}

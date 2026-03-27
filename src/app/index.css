@@ -7,6 +7,8 @@
 	--theme-fats-light-color: #f87171;
 	--theme-carbs-color: #ffc107;
 	--theme-carbs-light-color: #fcd34d;
+	--theme-water-color: #288ea7;
+	--theme-water-light-color: #2c9db9;
 }
 
 /* Тема за замовчуванням (Default Dark) */
@@ -24,7 +26,7 @@
 
 /* Світла тема */
 #root[data-theme='light'] {
-	--theme-main-bg-color: #f8fafc;
+	--theme-main-bg-color: #ebf1f7;
 	--theme-secondary-bg-color: #e2e8f0;
 	--theme-surface-color: #ffffff;
 	--theme-surface-distinctive-color: #f1f5f9;
@@ -142,15 +144,6 @@ body {
 	justify-content: center;
 }
 
-body .screen {
-	padding-bottom: 80px;
-	height: 100%;
-	width: 100%;
-	max-width: 700px;
-	background-color: var(--theme-main-bg-color);
-	overflow-y: auto;
-}
-
 h1,
 h2,
 h3,
@@ -161,4 +154,13 @@ p,
 a,
 span {
 	margin: 0;
+}
+
+button {
+	padding: 0;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: inherit; 
+  cursor: pointer;
 }

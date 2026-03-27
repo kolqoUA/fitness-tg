@@ -1,31 +1,60 @@
-import './styles.css';
+import "./styles.css";
 
-import { useState } from 'react';
+import { useState } from "react";
 
-import { BarcodeScanner } from '@/shared/ui';
+import { BarcodeScanner, Button } from "@/shared/ui";
+import { BarcodeScannerCard } from "./barcode-scanner-card";
+import { fetchProductByBarcode } from "../api/fetch-product-by-barcode";
+import { Meal, type MealType } from "@/entities/meal";
 
 const MealBarcodeScanner = () => {
-const [scannedCode, setScannedCode] = useState<string | null>(null);
+  const [isBarcodeScanner, setIsBarcodeScanner] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [scannedProduct, setScannedProduct] = useState<MealType | null>(null);
 
-  const handleSuccess = (code: string) => {
-    console.log("Штрих-код знайдено:", code);
-    setScannedCode(code);
+  const handleSuccess = async (code: string) => {
+    setIsBarcodeScanner(false);
+
+    setIsLoading(true);
+
+    const product = await fetchProductByBarcode(code);
+
+    setIsLoading(false);
+
+    if (product) {
+      setScannedProduct(product);
+    } else {
+      alert(`Продукт зі штрих-кодом ${code} не знайдено в базі :(`);
+    }
   };
+
+  if (isBarcodeScanner) {
+    return (
+      <div className="meal-scanner-feature">
+        <BarcodeScanner
+          onScanSuccess={handleSuccess}
+          onBackClick={() => {
+            (setIsBarcodeScanner(false), setScannedProduct(null));
+          }}
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="meal-scanner-feature">
-      <h2 className="title">Відскануйте продукт</h2>
-      
-      {!scannedCode ? (
-        <BarcodeScanner onScanSuccess={handleSuccess} />
-      ) : (
-        <div className="result-box">
-          <p>Код: {scannedCode}</p>
-          <button onClick={() => setScannedCode(null)}>Сканувати інший</button>
-        </div>
+      <BarcodeScannerCard onClick={() => setIsBarcodeScanner(true)} />
+      {isLoading && <p>Шукаємо продукт у базі даних...</p>}
+      {scannedProduct && !isLoading && (
+        <>
+          <div>
+            <Meal meal={scannedProduct} />
+          </div>
+          <Button className="button-primary">Добавити</Button>
+        </>
       )}
     </div>
   );
-}
+};
 
-export default MealBarcodeScanner
+export default MealBarcodeScanner;

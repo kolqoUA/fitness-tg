@@ -28,7 +28,7 @@ const MealAiParser = () => {
     <form className="meal-manual-form" onSubmit={handleSubmit(onSubmit)}>
       <ImageUploader {...register("image")} />
       <MealInfo meal={meal} />
-      <Button className="button-primary">Згенерувати</Button>
+      <Button className="button-primary">Добавити</Button>
     </form>
   );
 };

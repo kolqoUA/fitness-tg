@@ -1,26 +1,24 @@
-import './index.css'
+import "./index.css";
 
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { RouterProvider } from 'react-router-dom'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
 
-import router from './router.tsx'
-import { initTheme } from '@/shared/lib'
+import router from "./router.tsx";
+import { initTheme } from "@/shared/lib";
 
-const root = document.getElementById('root')!
+const root = document.getElementById("root")!;
 
-initTheme()
+initTheme();
 
-const tg = (window as any).Telegram?.WebApp
+const tg = (window as any).Telegram?.WebApp;
 
 if (tg) {
-	tg.ready()
+  tg.ready();
 }
 
 createRoot(root).render(
-	<StrictMode>
-		<div className='screen'>
-			<RouterProvider router={router} />
-		</div>
-	</StrictMode>,
-)
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>,
+);
